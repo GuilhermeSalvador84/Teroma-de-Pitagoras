@@ -1,6 +1,6 @@
 # Desafio Teroma de Pitágoras
 
-Os arquivos contidos neste repositório referense a um desafio para o teste Cromai utilizando Python, javaScript, e Flask:
+Os arquivos contidos neste repositório referen-se a um desafio para o teste Cromai utilizando Python, javaScript, e Flask:
 
 TO DO:
 A sua missão nessa grande jornada é mostrar para ele que nada foi em vão e para isso você precisará
