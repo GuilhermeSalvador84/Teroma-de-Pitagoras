@@ -1,4 +1,4 @@
-# calcularTeromaDePitagoras
+# Desafio Teroma de Pitágoras
 
 Os arquicos contidos neste repositório referense a um desafio para o teste Cromai utilizando Python, javaScript, e Flask:
 
