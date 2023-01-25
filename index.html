@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!Linguagem escolhilha para realizar o desafio foi html>
+
+<html>
+<!Na parte inicial temos o layout utilizando CSS, conforme solicita o contratante>
+<head>
+    <title>Calculadora - Teorema de Pitágoras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+<style>
+    #retangulo {
+        height: 150px;
+        width: 250px;
+        background:black;
+    }
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+               <span class="navbar-brand mb-0 h1">Calculo do Teorema de Pitágoras</span>
+    </nav>
+    <!A tag div define uma divisão ou seção em um documento HTML . O elemento "div" é frequentemente usado como um contêiner para outros elementos HTML para estilizá-los com CSS ou para executar determinadas tarefas com JavaScript>
+    <div class="container-fluid">
+        <br >
+        <div class="row">
+            <div class="col-md-6">
+                <p> O teorema de Pitágoras, relaciona as medidas dos lados de um triângulo retângulo da seguinte maneira: Em um triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. Observe a seguinte fórmula: a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>, onde c = hipotenusa, a e b = catetos</p>
+            </div>
+            <div class="col-md-6">
+
+            </div>
+        </div>
+        <form>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <label for="catetoOposto">Cateto Oposto (a)</label>
+                    <input type="number" class="form-control" id="catetoOposto">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="catetoAdjacente">Cateto Adjacente (b)</label>
+                    <input type="number" class="form-control" id="catetoAdjacente">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-3">
+                    <button type="button" class="btn btn-primary" onclick="Calcula()">Calcular</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label for="hipotenusa">Hipotenusa (c)</label>
+                <input type="number" class="form-control" id="hipotenusa">
+            </div>
+        </div>
+    </div>
+    <!linguagem utilizada para realizar o calculo do teorema em javascript>
+    <script>
+        function Calcula() {
+            var catetoOposto = document.getElementById("catetoOposto").value;
+            var catetoAdjacente = document.getElementById("catetoAdjacente").value;
+
+            var hipotenusa = Math.sqrt( Math.pow(catetoOposto, 2) + Math.pow(catetoAdjacente, 2));
+
+            var inputHipotenusa = document.getElementById("hipotenusa");
+            inputHipotenusa.value = hipotenusa;
+
+        }
+    </script>
+</body>
+
+</html>
